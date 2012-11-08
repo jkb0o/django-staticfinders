@@ -9,21 +9,23 @@ copied, else skipped.
 Install
 -------
 
-    STATICFILES_FINDERS = (
-        'staticfinders.FilteredFileSystemFinder',
-        'staticfinders.FilteredAppDirectoriesFinder',
-    )
-    STATICFILES_INCLUDE = (
-        '*.js', 
-        '*.css', 
-        '*.png',
-        '*.jpg',
-        '*.jpeg',
-        '*.woff',
-    )
-    STATICFILES_EXCLUDE = (
-        'templates*',
-        'blocks*',
-        'img/sprites/*/*.png'
-    )
+Add to settings.py::
+
+   STATICFILES_FINDERS = (
+       'staticfinders.FilteredFileSystemFinder',
+       'staticfinders.FilteredAppDirectoriesFinder',
+   )
+   STATICFILES_INCLUDE = (
+       '*.js', 
+       '*.css', 
+       '*.png',
+       '*.jpg',
+       '*.jpeg',
+       '*.woff',
+   )
+   STATICFILES_EXCLUDE = (
+       'templates*',
+       'blocks*',
+       'img/sprites/*/*.png'
+   )
 
