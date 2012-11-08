@@ -1,0 +1,6 @@
+.ropeproject
+*.pyc
+*.sw?
+build
+dist
+django_staticfinders.egg-info
